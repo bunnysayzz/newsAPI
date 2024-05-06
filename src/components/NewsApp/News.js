@@ -7,7 +7,7 @@ export default function News() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const data = await fetch("https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=459cc0da51964312a4de166a80b43f72");
+            const data = await fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8694270663f849698c2d5766c116343d");
             const response = await data.json();
             setData(response.articles);
         }
